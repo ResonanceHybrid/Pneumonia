@@ -287,7 +287,7 @@ def train_models():
         workers=1,
         use_multiprocessing=False,
         class_weight=class_weights,
-        verbose=1  # Show progress bar
+        verbose=2  # Show progress bar
     )
     
     custom_cnn.save('models/custom_cnn_final.keras')
@@ -333,7 +333,7 @@ def train_models():
         workers=1,
         use_multiprocessing=False,
         class_weight=class_weights_resnet,
-        verbose=1  # Show progress bar
+        verbose=2  # Show progress bar
     )
     
     resnet_model.save('models/resnet101_final.keras')
