@@ -89,9 +89,11 @@
 
         <!-- Model Metrics Section -->
         {% if metrics %}
+
+
 <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
     <!-- Custom CNN Metrics -->
-    <div class="bg-white rounded-lg shadow-md p-6">
+    <!-- <div class="bg-white rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-semibold mb-4">Custom CNN Performance</h2>
         <div class="grid grid-cols-2 gap-4 mb-6">
             <div class="p-4 bg-gray-50 rounded-lg">
@@ -112,12 +114,12 @@
             </div>
         </div>
         <div class="space-y-4">
-            <img src="{{ url_for('static', filename='images/custom_cnn_training_metrics.png') }}" alt="Custom CNN Training Metrics" class="w-full h-auto">
+            <img src="{{ url_for('static', filename='images/cnn_loss_accuracy.png') }}" alt="Custom CNN Training Metrics" class="w-full h-auto">
             <img src="{{ url_for('static', filename='images/custom_cnn_confusion_matrix.png') }}" alt="Custom CNN Confusion Matrix" class="w-full h-auto">
         </div>
-    </div>
+    </div> -->
 
-    <div class="bg-white rounded-lg shadow-md p-6">
+    <!-- <div class="bg-white rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-semibold mb-4">ResNet101 Performance</h2>
         <div class="grid grid-cols-2 gap-4 mb-6">
             <div class="p-4 bg-gray-50 rounded-lg">
@@ -138,11 +140,13 @@
             </div>
         </div>
         <div class="space-y-4">
-            <img src="{{ url_for('static', filename='images/resnet101_training_metrics.png') }}" alt="ResNet101 Training Metrics" class="w-full h-auto">
+            <img src="{{ url_for('static', filename='images/resnet_loss_accuracy.png') }}" alt="ResNet101 Training Metrics" class="w-full h-auto">
             <img src="{{ url_for('static', filename='images/resnet101_confusion_matrix.png') }}" alt="ResNet101 Confusion Matrix" class="w-full h-auto">
         </div>
     </div>
-</div>
+</div> -->
+
+
 {% endif %}
     </div>
 
